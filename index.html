@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start screen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="startscreen">
+        <h1 id="main-h1">Pass the Pigs</h1>
+        <button id="start-button">Start Game</button><br>
+        <select name="players" id="players">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <label for="players" id="players-label">Choose the amount of players</label><br>
+        <label for="one-die" class="dice-label">One Die</label>
+        <input type="radio" name="dice-choice" id="one-die">
+        <label for="two-dice" class="dice-label">Two Dice</label>
+        <input type="radio" name="dice-choice" id="two-dice"><br>
+        <p id="error-dice"></p>
+        <div id="player-name-div">
+            <label for="player-1-name" class="player-name-label">Player 1 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-1-name" id="player-1-name" class="name-input">
+                <button class="name-submit" data-player="1">Submit</button>
+            </div>
+            <p id="player-1-error"></p>
+            <label for="player-2-name" class="player-name-label">Player 2 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-2-name" id="player-2-name" class="name-input"><br>
+                <button class="name-submit" data-player="2">Submit</button><br>
+            </div>
+            <p id="player-2-error"></p>
+            <label for="player-3-name" class="player-name-label">Player 3 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-3-name" id="player-3-name" class="name-input"><br>
+                <button class="name-submit" data-player="3">Submit</button><br>
+            </div>
+            <p id="player-3-error"></p>
+            <label for="player-4-name" class="player-name-label">Player 4 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-4-name" id="player-4-name" class="name-input"><br>
+                <button class="name-submit" data-player="4">Submit</button><br>
+            </div>
+            <p id="player-4-error"></p>
+            <label for="player-5-name" class="player-name-label">Player 5 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-5-name" id="player-5-name" class="name-input"><br>
+                <button class="name-submit" data-player="5">Submit</button><br>
+            </div>
+            <p id="player-5-error"></p>
+            <label for="player-6-name" class="player-name-label">Player 6 name:</label>
+            <div class="name-input-container">
+                <input type="text" name="player-6-name" id="player-6-name" class="name-input"><br>
+                <button class="name-submit" data-player="6">Submit</button><br>
+            </div>
+            <p id="player-6-error"></p>
+        </div>
+    </div>
+    <div id="game-container" class="hidden-game hidden">
+        <h2 id="main-h2">Pass the Pigs</h2>
+        <div class="dice-container">
+            <div class="dice"></div>
+            <div class="dice"></div>
+        </div>              
+        <div id="game-buttons">
+            <button type="button" class="roll-dice">Roll Dice</button>
+            <button type="button" class="stay">Stay</button>
+        </div>
+        <div id="player-scores-container">
+            <p id="round-score">Current Round Score: 0</p>
+            <p id="total-scores">Total scores:</p>
+            <div class="player-score">
+                <label for="player-1-names">Player 1:</label>
+                <span id="player-1-score">0</span>
+            </div>
+            <div class="player-score">
+                <label for="player-2-names">Player 2:</label>
+                <span id="player-2-score">0</span>
+            </div>
+            <div class="player-score">
+                <label for="player-3-names">Player 3:</label>
+                <span id="player-3-score">0</span>
+            </div>
+            <div class="player-score">
+                <label for="player-4-names">Player 4:</label>
+                <span id="player-4-score">0</span>
+            </div>
+            <div class="player-score">
+                <label for="player-5-names">Player 5:</label>
+                <span id="player-5-score">0</span>
+            </div>
+            <div class="player-score">
+                <label for="player-6-names">Player 6:</label>
+                <span id="player-6-score">0</span>
+            </div>
+        </div>
+    </div>
+    <div id="end-game-screen" class="hidden-game hidden">
+        <h2>Game Over</h2>
+        <p>Total Scores:</p>
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>

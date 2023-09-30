@@ -1,0 +1,186 @@
+.dice-container {
+	display: flex;
+    justify-content: center;
+}
+
+#round-score {
+    cursor: default;
+    font-weight: bold;
+}
+
+#players {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.dice-label {
+    font-weight: bold;
+}
+
+#players-label {
+    font-weight: bold;
+}
+
+.dice {
+	width: 80px;
+	height: 80px;
+	position: relative;
+    margin: 5px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	border-radius: 10px;
+    background: linear-gradient(to right, #590101, #FF0000);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.dice-dot {
+	--top: 0%;
+	--left: 0%;
+
+	width: 15px;
+	height: 15px;
+	background: linear-gradient(to left, #2b2b2b, #aaa8a8);
+	border-radius: 50%;
+
+	position: absolute;
+	top: var(--top);
+	left: var(--left);
+	transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
+
+.btn-roll-dice {
+	margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.name-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-input {
+    width: 200px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.error-message {
+    color: #bf0d0d;
+}
+
+
+#error-dice {
+    color: #bf0d0d;
+}
+
+.name-submit {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    color: #e98989;
+    background: linear-gradient(to left, rgb(7, 7, 182), rgb(108, 156, 177));
+}
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin-left: 30px;
+}
+
+.hidden-game {
+    background: linear-gradient(to bottom, rgb(224, 223, 223), rgb(161, 183, 193));
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.roll-dice, .stay {
+    background: linear-gradient(to top, rgb(71, 71, 172), rgb(88, 133, 152));
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.player-name-label, .player-score {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.active-player {
+    background: linear-gradient(to top, rgb(71, 71, 172), rgb(88, 133, 152));
+    color: #fff;
+}
+
+#start-button {
+    color: #e98989;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(7, 7, 182), rgb(108, 156, 177));
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#player-name-div {
+    margin: 10px;
+}
+
+#main-h1 {
+    cursor: default;
+    font-size: 50px;
+    color: #292525;
+    margin: 0 auto;
+    max-width: 380px;
+    text-shadow: 4px 4px 8px rgb(80, 69, 71);
+    transform: translateY(2px);
+}
+
+#main-h2 {
+    cursor: default;
+    font-size: 50px;
+    color: #292525;
+    margin: 0 auto;
+    max-width: 380px;
+    text-shadow: 4px 4px 8px rgb(80, 69, 71);
+    transform: translateY(2px);
+}
+
+#total-scores {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.startscreen {
+    background: linear-gradient(to bottom, rgb(224, 223, 223), rgb(161, 183, 193));
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#one-die {
+    cursor: pointer;
+}
+
+#two-dice {
+    cursor: pointer;
+}
